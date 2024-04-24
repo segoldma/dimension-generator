@@ -15,11 +15,13 @@ def convert_model_to_lookml(data, model_name):
     type_mapping = {
         "TEXT": "string",
         "TIMESTAMP_TZ": "time",
+        "TIMESTAMP": "time",
         "BOOLEAN": "yesno",
         "FLOAT": "number",
         "DATE": "date",
         "TIMESTAMP_NTZ": "time",
-        "NUMBER": "number"
+        "NUMBER": "number",
+        "INT64": "number"
     }
 
     # Check if the model exists in the data
